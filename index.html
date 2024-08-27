@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="asset/Logo.png" class="logo-alura" alt="Logo de Alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-encripta-decripta" cols="34" rows="11" placeholder="Ingrese el texto aquí" id="txtarea-valor"></textarea>
+            <div>
+                <h6 class="informacion" id="lbl-info">
+                    <img src="asset/bi_exclamation-circle-fill.png">
+                    Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+
+            <div class="botones-acciones">
+                <button class="btn_encriptar" id="btn-encriptar">Encriptar</button>
+                <button class="btn_desencriptar" id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="sec-resultado" id="seccion-resultado">
+            <div class="resultado-cripto">
+                <img class="img-busqueda" src="/asset/Muñeco.png" alt="img" id="img-busq">
+                <span class="text-msg1" id="txt-msg-1">Ningún mensaje fue
+                    encontrado</span>
+                <span class="text-msg2" id="txt-msg-2">Ingresa el texto que desees encriptar o desencriptar.</span>
+                <textarea class="text-resultado-cripto" cols="30" rows="10" id="txtarea-result"></textarea>
+            </div>
+
+            <div class="boton-resultado-cripto">
+                <button class="btn_copiar" id="btn-copiar" >Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
